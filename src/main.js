@@ -3,6 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+// reset css
+import './assets/style/minireset.css'
+// 公用css
+import './assets/style/common.styl'
 Vue.config.productionTip = false
 
 new Vue({
