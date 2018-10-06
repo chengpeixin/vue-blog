@@ -2,6 +2,7 @@
     div.head
      h1 ASDASDASDSA
      div.quotes {{quotes}}
+     .hr
 </template>
 <script>
 export default {
@@ -16,7 +17,6 @@ export default {
 <style lang="stylus" scoped>
 .head
  box-sizing border-box
- padding 0 40px
  overflow hidden
  h1
   font-size 31.5px
@@ -25,4 +25,6 @@ export default {
  .quotes
      font-size 13px
      margin-top 20px
+.hr
+  margin 20px 0
 </style>
