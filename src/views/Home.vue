@@ -4,7 +4,7 @@
    .hr
    ul.content
     li(v-for='item in list' key='item.id')
-     p.title {{item.title}}
+     h2.title {{item.title}}
      div.info {{item.time}}
 </template>
 
@@ -16,6 +16,28 @@ export default {
   data () {
     return {
       list: [
+        {
+          title: '弃用 Chrome 改用 Firefox 的几点理由——关于 Chrome 69 隐私丑闻的随想',
+          time: '2018年06月1日',
+          id: '123',
+          label: [
+            {
+              name: '哈哈',
+              id: '3'
+            }
+          ]
+        },
+        {
+          title: '弃用 Chrome 改用 Firefox 的几点理由——关于 Chrome 69 隐私丑闻的随想',
+          time: '2018年06月1日',
+          id: '123',
+          label: [
+            {
+              name: '哈哈',
+              id: '3'
+            }
+          ]
+        },
         {
           title: '弃用 Chrome 改用 Firefox 的几点理由——关于 Chrome 69 隐私丑闻的随想',
           time: '2018年06月1日',
@@ -43,11 +65,16 @@ export default {
   .hr
     margin 20px 0
   .content
-    .title
-        font-size 21px
-        font-weight 550
-        color #0066FF
-    .info
-      margin-top 15px
-      font-size 13px
+    li
+      height 120px
+      .title
+          font-size 21px
+          font-weight 550
+          color #0066FF
+          cursor pointer
+      .title:hover
+          text-decoration: underline
+      .info
+          margin-top 15px
+          font-size 13px
 </style>
